@@ -1,0 +1,145 @@
+/* Estilos Gerais */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 56px;
+}
+
+/* Cores Personalizadas */
+:root {
+    --primary-purple: #6a1b9a;
+    --secondary-purple: #9c27b0;
+    --light-purple: #e1bee7;
+}
+
+/* Navbar */
+.navbar-dark {
+    background-color: var(--primary-purple) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('./src/acai-lunas.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(106, 27, 154, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--primary-purple) !important;
+    border-color: var(--primary-purple) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-purple) !important;
+    border-color: var(--secondary-purple) !important;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--light-purple) !important;
+    color: var(--primary-purple) !important;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Benefícios */
+.bi {
+    font-size: 2rem;
+    color: var(--primary-purple) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-purple) !important;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--light-purple) !important;
+}
+
+.labelCheck {
+    position: relative;
+    bottom: 1.3em;
+}
+
+.labelComplementos{
+    position: relative;
+    top: 1.4em;
+}
+
+.labelCobertura{
+    position: relative;
+    bottom: 1.3em;
+}
+
+#elogio1{
+    background-image: url('./src/elogio1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+    
+}
+#elogio2{
+    background-image: url('./src/elogio2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+}
+#elogio3{
+    background-image: url('./src/elogio3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+}
+#elogio4{
+    background-image: url('./src/elogio4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+    
+   
+}
