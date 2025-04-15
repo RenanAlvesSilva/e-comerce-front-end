@@ -8,6 +8,9 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         personalizar: resolve(__dirname, 'personalizar.html')
       }
-    }
+    },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true
   }
 });
