@@ -3,21 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && yarn copy-files",
+    "copy-files": "mkdir -p dist/js && cp -r js/* dist/js/ && cp *.js dist/ || true",
     "preview": "vite preview",
-    "start": "npx serve -s dist -l $PORT",
-    "clean": "rm -rf node_modules && yarn cache clean && yarn install"
+    "start": "http-server ./dist -p $PORT"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "glob": "^11.0.1",
-    "serve": "^14.2.4",
     "vite": "^5.4.2"
   },
   "dependencies": {
-    "inputmask": "^5.0.9",
-    "sirv-cli": "^3.0.1"
+    "http-server": "^14.1.1",
+    "inputmask": "^5.0.9"
   }
 }
