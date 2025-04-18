@@ -6,7 +6,7 @@
     "command": "yarn build"
   },
   "deploy": {
-    "startCommand": "yarn build && yarn start",
+    "startCommand": "npm run build && npm run start",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
