@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "http-server": "^14.1.1",
-    "inputmask": "^5.0.9"
+    "inputmask": "^5.0.9",
+    "serve": "^14.2.4"
   }
 }
