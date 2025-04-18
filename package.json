@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite preview --port $PORT"
+    "start": "http-server dist -p $PORT"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
