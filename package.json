@@ -11,7 +11,7 @@
     "build": "vite build && yarn copy-files",
     "copy-files": "mkdir -p dist/js && cp -r js/* dist/js/ && cp *.js dist/ || true",
     "preview": "vite preview",
-    "start": "http-server ./dist -p $PORT"
+    "start": "cross-env PORT=${PORT:-8080} http-server ./dist -p $PORT"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
